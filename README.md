@@ -223,9 +223,7 @@ JDBCJobStore几乎可以与任何数据库一起使用，已被广泛应用于Or
 图 2. Quartz 线程视图
 ![](https://www.ibm.com/developerworks/cn/opensource/os-cn-quartz/image002.gif)
 
-Scheduler 调度线程主要有两个： 执行常规调度的线程，和执行 misfired trigger (错过的任务)的线程。常规调度线程轮询存储的所有 trigger，如果有需要触发的 trigger，即到达了下一次触发的时间，则从任务执行线程池获取一个空闲线程，执行与该 trigger 关联的任务。Misfire 线程是扫描所有的 trigger，查看是否有 misfired trigger，如果有的话根据 misfire 的策略分别处理。下图描述了这两个线程的基本流程：
-
-![](https://www.ibm.com/developerworks/cn/opensource/os-cn-quartz/image003.png)
+Scheduler 调度线程主要有两个： 执行常规调度的线程，和执行 misfired trigger (错过的任务)的线程。常规调度线程轮询存储的所有 trigger，如果有需要触发的 trigger，即到达了下一次触发的时间，则从任务执行线程池获取一个空闲线程，执行与该 trigger 关联的任务。Misfire 线程是扫描所有的 trigger，查看是否有 misfired trigger，如果有的话根据 misfire 的策略分别处理。
 
 ### cron表达式
 
