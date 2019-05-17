@@ -1,0 +1,31 @@
+spring:
+  ## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/quartz_task?useSSL=false
+    username: root
+    password: 123
+  ## QuartzProperties
+  quartz:
+    job-store-type: jdbc
+    properties:
+      org:
+        quartz:
+          threadPool:
+            threadCount: 5
+        jobStore:
+          #  tablePrefix: QRTZ_
+  mail:
+    host: smtp.163.com #smtp.gmail.com
+    #port: 25
+    username: quartztask@163.com
+    #这里是授权码，不是免密  #KiL-bAb-e2Q-Mut
+    password: shouquanma123
+
+    properties:
+      mail:
+        smtp:
+          auth: true
+        starttls:
+          enable: true
+          required: true
+

@@ -1,0 +1,28 @@
+spring:
+  quartz:
+    #相关属性配置
+    properties:
+      org:
+        quartz:
+          scheduler:
+#            instanceName: quartzScheduler
+#            instanceId: AUTO
+          jobStore:
+            isClustered: false
+#            class: org.quartz.impl.jdbcjobstore.JobStoreTX
+#            driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+#            tablePrefix: QRTZ_
+#            clusterCheckinInterval: 10000
+#            useProperties: false
+#          threadPool:
+#            class: org.quartz.simpl.SimpleThreadPool
+#            threadCount: 10
+#            threadPriority: 5
+#            threadsInheritContextClassLoaderOfInitializingThread: true
+    job-store-type: memory
+
+
+
+#  spring.task.execution.pool.max-threads=16
+#  spring.task.execution.pool.queue-capacity=100
+#  spring.task.execution.pool.keep-alive=10s
