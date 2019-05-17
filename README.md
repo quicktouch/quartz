@@ -177,9 +177,9 @@ public class TestTask2 extends QuartzJobBean {
 
 ### 相关概念脑图
 
-![20190517155805910673112.png](http://image.tyrad.cc/20190517155805910673112.png)
+![20190517155805910673112.png](./img/Quartz.png)
 
-![20190517155806280034131.png](http://image.tyrad.cc/20190517155806280034131.png)
+![20190517155806280034131.png](./img/2.png)
 
 ### 核心元素
 
